@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: currency-exchange
+
+server:
+  port: 8080
+
+treasury:
+  # Base endpoint for the U.S. Treasury "Reporting Rates of Exchange" dataset.
+  rates-url: https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
