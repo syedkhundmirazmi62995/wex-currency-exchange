@@ -10,8 +10,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Holds purchases in a {@link ConcurrentHashMap}. Purchases are immutable, so a stored reference is
- * safe to hand out without copying. Data does not survive a restart — that's an accepted trade-off
- * for the "no external database" requirement and is called out in the README.
+ * safe to hand out without copying. Data does not survive a restart, which is fine for this service
+ * and is called out in the README.
  */
 @Repository
 public class InMemoryPurchaseRepository implements PurchaseRepository {

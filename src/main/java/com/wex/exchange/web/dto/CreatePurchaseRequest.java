@@ -11,8 +11,8 @@ import java.time.LocalDate;
 
 /**
  * Incoming purchase to store. The amount is intentionally not constrained to two decimals here —
- * the brief asks us to round to the nearest cent, so a value like 19.995 is accepted and rounded
- * rather than rejected. The {@code @Digits} cap just keeps out absurd precision/magnitude.
+ * a value like 19.995 is accepted and rounded to the nearest cent rather than rejected. The
+ * {@code @Digits} cap just keeps out absurd precision/magnitude.
  */
 public record CreatePurchaseRequest(
 

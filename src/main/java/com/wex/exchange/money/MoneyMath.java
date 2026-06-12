@@ -10,7 +10,6 @@ import java.math.RoundingMode;
  */
 public final class MoneyMath {
 
-    /** Cents. */
     public static final int SCALE = 2;
 
     /** "Nearest cent" — round half away from zero, the usual convention for retail amounts. */
